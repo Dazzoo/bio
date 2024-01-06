@@ -1,0 +1,4 @@
+[build]
+  base = "https://karthik-bio.netlify.app/" # Set the base directory to 'my-site'
+  command = "npm run build" # The command to build your site
+  publish = "https://karthik-bio.netlify.app/" # The directory to publish after the build
