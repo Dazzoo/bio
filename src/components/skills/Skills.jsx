@@ -154,7 +154,7 @@ const Skills = ({ darkMode }) => {
             className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
             src="https://img.icons8.com/ios-filled/50/null/git.png"
             />
-              <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src={require('../../assets/aws.jpg')}/>
+              <img className="w-[40px] h-[30px] md:w-[35px] md:h-[35px]" src={require('../../assets/aws_logo.png')}/>
           <img className="w-[55px] h-[32px] md:w-[35px] md:h-[30px]" src={require('../../assets/docker_logo.png')}/>
           
         </div>

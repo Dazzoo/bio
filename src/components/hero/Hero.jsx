@@ -142,7 +142,7 @@ const Hero = () => {
           <div className="relative h-[88%] w-fit flex items-center sm:items-end">
             <img
             data-aos="fade-up"
-              className=" h-[85%] hero-pic w-full object-cover md:h-[95%] md:m-auto sm:m-0"
+              className=" h-[85%] hero-pic w-full object-cover md:h-[95%] md:m-auto sm:m-0 "
               src={require('../../assets/image.jpg')}
               // src={mine}
               alt="mine"

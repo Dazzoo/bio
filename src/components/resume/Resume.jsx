@@ -42,31 +42,21 @@ const About = () => {
               {/* design */}
               <div className=" flex flex-col bg-white gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                Sr.Software Developer
+                Full-stack
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                Religh Technologies,Bangalore
+                Freelance, Remotely
                 </span>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
                   June 2023 - Present
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
-                Project Description:
-I had the privilege of being part of an elite development team responsible for creating a cutting-edge luxury car rental eCommerce website. This project aimed to provide an exceptional online platform for customers to browse, select, and reserve high-end luxury vehicles for various occasions. My role was pivotal in translating design concepts and business requirements into a fully functional and visually appealing website.
-
-Key Achievements and Responsibilities:
-Front-End Development:
-Led the front-end development efforts, collaborating closely with UI/UX designers to implement a user-friendly and visually stunning interface.
-Utilized modern web technologies, including HTML, CSS, and JavaScript, to create responsive and dynamic web pages, ensuring seamless user experiences across devices.
-React.js Integration:
-Integrated React.js to build interactive user interfaces and facilitate a smoother browsing and booking experience for customers.
-Utilized component-based architecture to create reusable UI elements, streamlining development and maintenance.
-Back-End Development:
-Developed the server-side logic using Node.js and Express.js, enabling robust and efficient handling of user requests, data storage, and security features.
-Implemented RESTful API endpoints for communication between the front-end and back-end systems, ensuring data integrity and reliability.
-Database Management:
-Designed and managed the database using SQL, optimizing data storage for fast retrieval and scalability.
-Implemented user authentication and authorization systems to protect sensitive user data and transactions.
+                As a new freelancer, I have been working on a variety of projects, including 
+                web development, fixing bugs, writing documentations. I am responsible for the entire development process, 
+                from the initial design to the final deployment of the project. My primary focus is on 
+                creating user-friendly and responsive web applications that meet the client's needs and 
+                specifications. I have been working with a variety of technologies, including but not 
+                limited to React JS, Redux JS, Next.js, Node.js, MongoDB and Express.
                 </p>
               </div>
               
@@ -82,28 +72,41 @@ Implemented user authentication and authorization systems to protect sensitive u
               {/* design */}
               <div className=" flex flex-col bg-white gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                Python Developer
+                Front-end
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                KGIT Services, Bangalore
+                BIXME LLC, Florida, USA ( Remotely )
                 </span>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                Apr 2022 - June 2023
+                Mar 2021 - Oct 2023
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
-                Created script for extracting the data from unstructured document such as pdf and converting them to csv or excel with Regular expressions and pandas in python.Created API using Django.Experience in writing CSS Selectors and XPATH expressions to identify web elements.Developed Automation for browser for scrapping the data from a website store that in Database.Worked in developing the screens for delete, Edit, Enable, Disable and Impersonate Users in web application with Django  Managed code versioning with Github and deployment to staging and production servers  Worked in various python IDE’s Such as Pycharm,Vscode,jupyter  Generating JSON data and storing it in NOSQL database (MongoDB).  Experience in using version control system (GIT) and Jira Tool.
+                In the Delikeys project, I served as the sole front-end developer while also participating 
+                significantly in collaboration with the back-end team. I was responsible for creating 
+                and developing an application from scratch, which upon completion, would be ready for 
+                live production use. The main goal of the application was to facilitate and automate the 
+                processes of parcel shipping and tracking, and thus enhance productivity in warehouse operations.
+                
+                To implement the solution, I applied various technologies, including but not limited 
+                to React JS, Redux JS, and Tailwind CSS. In addition to development tasks, I worked 
+                closely with the back-end team to ensure a successful API connection, guaranteeing
+                 that the implementation and desired functionality of the application.
+                
+                A key achievement in this project was that the implementation of the application led to 
+                an 8-fold increase in the number of parcels managed per worker. This notable improvement 
+                in efficiency was achieved without any deleterious effect on the employed workforce number,
+                 demonstrating the effectiveness and utility of the developed application in real-world 
+                 operations.
                 </p>
               </div>
               
             </div>
-          <button onClick={()=>{
+          {/* <button onClick={()=>{
 
 setviewmore(true)
 
-          }}>Viwe more</button>
+          }}>Viwe more</button> */}
 
-{
-            viewmore ?
               <div>
             <div>&nbsp;</div>
             <div className=" relative gap-1.5	">
@@ -114,18 +117,23 @@ setviewmore(true)
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
             
-              <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className=" flex flex-col bg-white gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                Service Delivery Executive
+                Front-end
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                Neeyamo Enterprise Solutions Pvt,Ltd,Madurai
+                StarApps, Lviv, Ukraine
                 </span>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                Jul 2020 -  Apr 2022
+                Aug 2020 - Mar 2021
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
-                Neeyamo, is a leading global HRO services such as HR technology, HR operations, HR process consulting services and solutions provider, is committed to helping the companies worldwide build stronger businesses.  Presently, Neeyamo serves clients spread across six continents and covers the entire hire-to-retire cycle.  Provide technical assistance in the process of Background Verification.  Manage Clients and Client requirements.  Responsible for Quality Control, Production and Timely Completion of task.  Coordinating with team and handling mails.
+                At this company, I had the opportunity to create top-tier websites. 
+                My role as a front-end developer encompassed frequent collaboration on various projects, 
+                ranging from small scale to extensive, complex projects. These experiences primarily 
+                revolved around providing the most efficacious solutions for clients, which not only 
+                brought their innovative ideas to life but also considerably amplified their profits. 
+                In the course of this, I had my skills honed in React JS, evolving immensely as a developer.
                 </p>
               </div>
               
@@ -139,7 +147,6 @@ setviewmore(true)
              </div>
               
               
-          }
 
         
           
@@ -172,16 +179,75 @@ setviewmore(true)
               {/* design */}
               <div className=" flex flex-col bg-white gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  B.Sc, Computer Science
+                The Complete Bootcamp
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                Yadava  College 
+                Udemy, Online
                 </span>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  Year 2016 - Year 2019
+                  Year 2023
                 </span>
                 <p className=" text-[.9rem] text-justify text-gray-500">
-                That's a fantastic skill set you have as an graduate student Your proficiency in web development technologies like HTML, CSS, JavaScript, and React JS, coupled with your backend skills in python,flask,django,Node.js,API,and MongoDB,database in mysql make you well-rounded in both front-end and back-end development and database. Moreover,your problem-solving capabilities using data structures and algorithms demonstrate a strong foundation in computer science fundamentals.
+                  Mastered the modern back-end stack including Node, Express, MongoDB and Mongoose, and applied knowledge to build
+                    a practical, dynamic application from scratch. Skilled in constructing a robust RESTful API and performing CRUD
+                    operations with MongoDB. Gained insights on working with data in NoSQL databases, implemented advanced
+                    authentication and security measures, and acquired hands-on experience in server-side website rendering with Next.js .
+                    Further developed proficiency in Stripe credit card payments, handling email interactions, file uploads, and deploying
+                    applications to production.
+                </p>
+              </div>
+            </div>
+            <div>&nbsp;</div>
+            <div className=" relative">
+              {/* design */}
+              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+              </div>
+              {/* design */}
+              <div className=" flex flex-col bg-white gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                Next.js - The Complete Guide
+                </h1>
+                <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                Udemy, Online
+                </span>
+                <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  Year 2021
+                </span>
+                <p className=" text-[.9rem] text-justify text-gray-500">
+                    Learned how to make Web apps on the back end side by extending the latest React feature.
+                    In addition I also learned how to use Tailwind CSS. Incorporating 
+                    Tailwind not only enriched the visual aesthetics of the projects but also optimized their design workflow
+                </p>
+              </div>
+            </div>
+            <div>&nbsp;</div>
+            <div className=" relative">
+              {/* design */}
+              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+              </div>
+              {/* design */}
+              <div className=" flex flex-col bg-white gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                React JS Way of Samurai
+                </h1>
+                <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                Online classes
+                </span>
+                <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  Year 2020
+                </span>
+                <p className=" text-[.9rem] text-justify text-gray-500">
+                The course provided me an excellent opportunity to apply theoretical concepts in real-world scenarios, 
+                learning to build responsive and interactive websites. Spanning from fundamental to advanced applications, 
+                the curriculum reinforced my proficiency in JavaScript while introducing me to the 
+                powerful libraries of React/Redux. During these courser I developed my first modern web project social-network that
+                you can find on my Github.
                 </p>
               </div>
             </div>
@@ -189,13 +255,13 @@ setviewmore(true)
             <div>&nbsp;</div>
             <div className=" relative">
               {/* design */}
-              <div className="design flex  absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+              <div className="design flex  absolute left-[-75px] top-1/2 items-center rotate-[90deg] sm:left-[-75px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
-                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="line w-[80px] bg-gray-300 h-[2px] sm:w-[80px]"></div>
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
               {/* design */}
-              <div className=" flex flex-col bg-white gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className=" flex flex-col bg-white gap-1 b order-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 {/* <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   B.Sc, Computer Science
                 </h1>
@@ -206,7 +272,36 @@ setviewmore(true)
                   Year 2016 - Year 2019
                 </span> */}
                 <p className=" text-[.9rem] text-justify text-gray-500">
-                As a graduate student, I have developed a diverse and valuable skill set. I possess proficiency in various web development technologies, including HTML, CSS, JavaScript, and React JS, which enables me to excel on the front-end of web development. Additionally, I have strong backend skills, encompassing Python, Flask, Django, Node.js, API development, and MongoDB. My experience extends to database management using MySQL, making me well-versed in the complete web development stack. Furthermore, my problem-solving abilities, rooted in a solid understanding of data structures and algorithms, demonstrate a robust foundation in computer science fundamentals. This combination of skills positions me as a versatile developer capable of tackling a wide range of web development projects, both on the client-side and server-side.
+                As a graduate student, I have developed a diverse and valuable skill set. 
+                I possess proficiency in various web development technologies, including HTML, CSS, 
+                JavaScript which enables me to excel on the front-end of web development. 
+                </p>
+              </div>
+            </div>
+            <div>&nbsp;</div>
+            <div className=" relative">
+              {/* design */}
+              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+              </div>
+              {/* design */}
+              <div className=" flex flex-col bg-white gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                  B.Sc, Computer Science
+                </h1>
+                <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                Lviv Polytechnic National University
+                </span>
+                <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  Year 2016 - Year 2020
+                </span>
+                <p className=" text-[.9rem] text-justify text-gray-500">
+                  Gained a firm grounding in theoretical and applied computer science, 
+                  a focus on key areas including Algorithms, Networks, Databases, Software Development, 
+                  Web Programming. Participated in advanced projects, promoting practical 
+                  skills alongside research-centric education.
                 </p>
               </div>
             </div>
