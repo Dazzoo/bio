@@ -23,15 +23,18 @@ const About = () => {
         </p>
       </div>
       {/* card*/}
-      <div className="card-wrapper w-[90%] sm:w-full mt-10 flex md:flex-col sm:gap-5 mx-auto ">
-        <div className="left flex-1 flex items-center justify-center">
+      <div className="card-wrapper w-[90%] sm:w-full mt-10 flex md:flex-col sm:gap-5 mx-auto">
+        <div className="left flex-1 flex items-start justify-center relative">
+          <div className="absolute top-[0px] w-[100%]" >
+            <legend className=" w-min bg-white w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-300 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
+              Experience
+            </legend>
+          </div>
           <fieldset
             data-aos="zoom-in"
             className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
-            <legend className="bg-white w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-300 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
-              Experience
-            </legend>
+            <div>&nbsp;</div>
             <div className=" relative">
               {/* design */}
               <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
@@ -161,14 +164,20 @@ setviewmore(true)
 
 
 
-        <div className="right mb-500px flex-1 flex  justify-center">
+        <div className="right mb-500px flex-1 flex  justify-center relative">
+        <div className="absolute top-[0px] left-[0px] w-[100%]" >
+              < legend className=" w-min bg-white ml-[50%] translate-x-[-50%] border-2 border-gray-300 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
+                Education
+              </legend>
+              </div>
           <fieldset
             data-aos="zoom-in"
             className="  w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
-            <legend className=" w-auto ml-[50%] bg-white translate-x-[-50%] border-2 border-gray-300 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
+            {/* <legend className=" bb w-auto ml-[50%] bg-white translate-x-[-50%] border-2 border-gray-300 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
               Education
-            </legend>
+            </legend> */}
+              <div>&nbsp;</div>
             <div className=" relative">
               {/* design */}
               <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
@@ -253,7 +262,7 @@ setviewmore(true)
             </div>
 {/* new */}
             <div>&nbsp;</div>
-            <div className=" relative">
+            <div className=" relative ">
               {/* design */}
               <div className="design flex  absolute left-[-75px] top-1/2 items-center rotate-[90deg] sm:left-[-75px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
@@ -261,7 +270,7 @@ setviewmore(true)
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
               {/* design */}
-              <div className=" flex flex-col bg-white gap-1 b order-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+              <div className=" flex flex-col bg-white gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 {/* <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   B.Sc, Computer Science
                 </h1>
