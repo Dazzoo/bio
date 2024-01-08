@@ -145,27 +145,27 @@ useEffect(() => {
 //       // window.location.href = mailtoLink;
 
 
-      const data = {
-        Email: email,
+      const templateParams = {
+        email: email,
         name: firstname,
-        Phonenumber:phone,
-        massgae:message,
+        Phonenumber: phone,
+        message: message,
         // type: 'Standard',
       }
-      const service_id = "service_wz832fd";
-      const template_id = "template_suctq7k";
-      const user_id = "uyglwKo2T8RHaK1jx";
+      const serviceID = "service_vkyx58v";
+      const templateID = "template_wia99vr";
+      const publicKey = "_l3TpAL-vAqRWmCaW";
       emailjs.send(
-        service_id,
-        template_id,
-        data,
-        user_id
+        serviceID,
+        templateID,
+        templateParams,
+        publicKey
       )
         .then(
           (result) => {
             console.log(result.text);
             // alert(result,"send")
-            console.log(data,"iiiiiiiiiiiii")
+            console.log(templateParams, "Contact")
             toast.success('Email sent successfully')
 
             setTimeout(() => {
@@ -268,24 +268,24 @@ setShow(false)
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="email"
-              placeholder="Your Mail id"
+              placeholder="Your Email"
               name=""
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
-              placeholder="Your name"
+              placeholder="Your Name"
               name=""
               onChange={(e) => setFirstname(e.target.value)}
             />
-             <input
+             {/* <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
               placeholder="Phone number"
               name=""
               onChange={(e) => setphone(e.target.value)}
-            />
+            /> */}
             <textarea
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               rows="4"

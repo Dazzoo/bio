@@ -1,28 +1,30 @@
-
+const natours = require('../assets/natours_preview.png')
+const delikeys = require('../assets/delikeys_preview.png')
 
 export const data = [
   {
     id: 1,
-    img: 'https://i.postimg.cc/VkRWdHWx/57214s81.jpg',
-    title: "Multimedia Web",
+    img: 'https://i.postimg.cc/wBjcJcW7/5890625.jpg',
+    title: "Dqwdwq",
     desc: "",
     link: "",
     git: "",
   },
   {
     id: 2,
-    img: 'https://i.postimg.cc/Bv75CLyN/4167022.jpg',
-    title: "Tarvel Agency",
-    link: "",
+    img: delikeys,
+    title: "Delikeys",
+    desc: "Application designed to facilitate and automate the processes of parcel shipping and tracking, and thus enhance productivity in warehouse operations.",
+    link: "http://alpha.canadamin.com/va/home",
     git: "",
   },
   {
     id: 3,
-    img: 'https://i.postimg.cc/wBjcJcW7/5890625.jpg',
-    title: "Music Player",
-    desc: "",
-    link: "",
-    git: "",
+    img: natours,
+    title: "Natours",
+    desc: "Fictional nature tours booking website. Built with Next.js, Express, MongoDB, Node.js, and Tailwind CSS.",
+    link: "https://natours-frontend-c8da54608917.herokuapp.com/",
+    git: "https://linkmix.co/20769638",
   }
   
 ];
