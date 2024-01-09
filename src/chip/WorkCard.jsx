@@ -3,22 +3,26 @@ import styled from "styled-components";
 import { data } from "../data/data";
 import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
+import { AiFillLayout } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import WorkPreviewSlider from './WorkPreviewSlider'
 
 const WorkCard = () => {
+  const [openModal, setOpenModal] = useState(false);
   const reversedData = [...data].reverse();
 
   return (
     <>
       {reversedData.map((data) => {
         return (
+          <>
           <div
             data-aos="zoom-in"
             key={data.id}
-            className="flex flex-col justify-center items-center gap-4"
+            className="flex flex-col justify-center items-center gap-4 mt-[20px]"
           >
             <POPUP className="img-content relative">
-              <div className="h-[280px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
+              <div className="h-[250px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[230px] sm:w-[92%] sm:bg-cover mx-auto ">
                 <img
                   src={data.img}
                   alt={data.title}
@@ -42,6 +46,15 @@ const WorkCard = () => {
                     <p className=" text-black">Demo</p>
                   </Link>
                   <br className="w-[2px] bg-white" />
+                  {data.id === 2 ? 
+                    <Link
+                    onClick={ () => setOpenModal(true)} 
+                    className=" mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
+                  >
+                    <AiFillLayout className="text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
+                    <p className=" text-black">Preview</p>
+                  </Link>
+                  :
                   <Link
                     to={data.git}
                     target="_blank"
@@ -50,6 +63,7 @@ const WorkCard = () => {
                     <AiOutlineGithub className="  text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
                     <p className=" text-black">Code</p>
                   </Link>
+                  }
                 </div>
               </div>
             </POPUP>
@@ -57,8 +71,13 @@ const WorkCard = () => {
               {data.title}
             </p>
           </div>
+          </>
         );
       })}
+      <WorkPreviewSlider
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+            />
     </>
   );
 };

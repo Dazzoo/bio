@@ -18,6 +18,9 @@
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
+body{
+  padding: 0px!important;
+}
 html {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
