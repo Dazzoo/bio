@@ -75,7 +75,7 @@ const About = () => {
               {/* design */}
               <div className=" flex flex-col bg-white gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                Front-end
+                Full-stack
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
                 BIXME LLC, Florida, USA ( Remotely )
@@ -100,6 +100,11 @@ const About = () => {
                 in efficiency was achieved without any deleterious effect on the employed workforce number,
                  demonstrating the effectiveness and utility of the developed application in real-world 
                  operations.
+
+                 Furthermore, I was involved in another aspect of the project, working on an Admin panel 
+                 application built with Next.js on the front-end and Node.js, Express, and MongoDB on 
+                 the back-end. This provided a cohesive user interface for administrative purposes and 
+                 system management.
                 </p>
               </div>
               
