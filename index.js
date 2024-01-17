@@ -5,8 +5,8 @@ const app = express()
 port = 80
 
 const options = {
-    key: fs.readFileSync('../../../etc/letsencrypt/live/yurii.shushanskyi.com/privkey.pem'),
-    cert: fs.readFileSync('../../../etc/letsencrypt/live/yurii.shushanskyi.com/fullchain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/yurii.shushanskyi.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/yurii.shushanskyi.com/fullchain.pem')
 };
 
 app.get("/", async (req, res) => {
