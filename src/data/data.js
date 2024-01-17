@@ -1,14 +1,15 @@
 const natours = require('../assets/natours_preview.png')
 const delikeys = require('../assets/delikeys_preview.png')
+const pokedex = require('../assets/pokedex_preview.png')
 
 export const data = [
   {
     id: 1,
-    img: 'https://i.postimg.cc/wBjcJcW7/5890625.jpg',
-    title: "Delikeys",
+    img: pokedex,
+    title: "PokeDexNFT",
     desc: "",
-    link: "",
-    git: "",
+    link: "https://pokedex-4433-3d4193a4c02e.herokuapp.com/",
+    git: "https://github.com/Dazzoo/Pokedex",
   },
   {
     id: 2,
