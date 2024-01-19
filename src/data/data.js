@@ -22,7 +22,7 @@ export const data = [
   {
     id: 3,
     img: natours,
-    title: "Delikeys",
+    title: "Natours",
     desc: "Fictional nature tours booking website. Built with Next.js, Express, MongoDB, Node.js, and Tailwind CSS.",
     link: "https://natours-frontend-c8da54608917.herokuapp.com/",
     git: "https://linkmix.co/20769638",
