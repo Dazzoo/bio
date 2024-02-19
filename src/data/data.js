@@ -1,5 +1,5 @@
 const natours = require('../assets/natours_preview.png')
-const delikeys = require('../assets/delikeys_preview.png')
+const vynil_planks = require('../assets/vynil_planks.png')
 const pokedex = require('../assets/pokedex_preview.png')
 
 export const data = [
@@ -13,11 +13,11 @@ export const data = [
   },
   {
     id: 2,
-    img: delikeys,
-    title: "Delikeys",
-    desc: "Application designed to facilitate and automate the processes of parcel shipping and tracking, and thus enhance productivity in warehouse operations.",
-    link: "http://alpha.canadamin.com/va/home",
-    git: "",
+    img: vynil_planks,
+    title: "Vinyl planks shop",
+    desc: "Vinyl planks shop",
+    link: "https://shop.shushanskyi.com",
+    git: "https://github.com/Dazzoo/bits-orchestra",
   },
   {
     id: 3,

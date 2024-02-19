@@ -46,7 +46,7 @@ const WorkCard = () => {
                     <p className=" text-black">Demo</p>
                   </Link>
                   <br className="w-[2px] bg-white" />
-                  {data.id === 2 ? 
+                  {/* {data.id === 2 ? 
                     <Link
                     onClick={ () => setOpenModal(true)} 
                     className=" mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
@@ -54,7 +54,7 @@ const WorkCard = () => {
                     <AiFillLayout className="text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
                     <p className=" text-black">Preview</p>
                   </Link>
-                  :
+                  : */}
                   <Link
                     to={data.git}
                     target="_blank"
@@ -63,7 +63,7 @@ const WorkCard = () => {
                     <AiOutlineGithub className="  text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
                     <p className=" text-black">Code</p>
                   </Link>
-                  }
+                  {/* } */}
                 </div>
               </div>
             </POPUP>
