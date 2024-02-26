@@ -5,11 +5,12 @@ import React, { useState, useEffect } from "react";
 
 
 const About = () => {
-  const [viewmore, setviewmore] = useState(false);
-
+  const [viewmoreLeft, setviewmoreLeft] = useState(false);
+  const [viewmoreRight, setviewmoreRight] = useState(false);
+  const smallScreen = window.innerWidth < 768
   
   return (
-    <div id="About" className=" container m-auto   mt-16">
+    <div id="About" className={`container m-auto mt-16`}>
       {/* heading */}
       <div data-aos="fade-up" className="relative mb-5">
         <h3 className=" text-3xl font-black sm:text-2xl">
@@ -35,7 +36,7 @@ const About = () => {
             className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
             <div>&nbsp;</div>
-            <div className=" relative">
+            <div className="relative">
               {/* design */}
               <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
@@ -54,12 +55,17 @@ const About = () => {
                   June 2023 - Present
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
-                As a new freelancer, I have been working on a variety of projects, including 
-                web development, fixing bugs, writing documentations. I am responsible for the entire development process, 
-                from the initial design to the final deployment of the project. My primary focus is on 
-                creating user-friendly and responsive web applications that meet the client's needs and 
-                specifications. I have been working with a variety of technologies, including but not 
-                limited to React JS, Redux JS, Next.js, Node.js, MongoDB and Express.
+                As a seasoned Full Stack Developer, I have my focus steeped in technologies 
+                like React JS, Next JS, Node JS, Mongo DB, and Express JS. My proficiency 
+                also extends to the robust NestJS and MySQL frameworks. With a proven 
+                track record of over four years in the tech industry, I've adapted effectively 
+                from a full-time position to freelancing, a testament to my technological 
+                versatility and persistent self-education.
+                Armed with a Bachelor’s degree in Computer Science and a 
+                wealth of self-acquired knowledge, I've crafted a career steeped 
+                in continual improvement and staying abreast of tech industry trends. 
+                I bring meticulous attention to detail and unwavering professionalism 
+                to the table, coupled with a commitment to deliver high quality work within set deadlines.
                 </p>
               </div>
               
@@ -117,6 +123,7 @@ setviewmore(true)
 
               <div>
             <div>&nbsp;</div>
+            {viewmoreLeft && 
             <div className=" relative gap-1.5	">
              
               <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px]  ">
@@ -146,28 +153,32 @@ setviewmore(true)
               </div>
               
             </div>
-
-
+            }
+              <button
+                  className=" text-2xl mt-1 p-5 text-black hover:underline	"
+                  onClick={()=>{
+                    if (smallScreen) {
+                      setviewmoreLeft((prev) => !prev)
+                    } else {
+                      setviewmoreLeft((prev) => {
+                        setviewmoreRight(!prev)
+                        return !prev
+                      })
+                    }
+                  }}>
+                {smallScreen ?
+                  (!viewmoreLeft ? 'View more...' : 'View less...')
+                :
+                  (!viewmoreLeft && !viewmoreRight ? 'View more...' : 'View less...')
+                  }
+              </button>
               </div>
-              : 
-              <div>
-              
+              <div> 
              </div>
-              
-              
 
-        
-          
-            
           </fieldset>
           
         </div>
-        
-
-
-
-
-
 
         <div className="right mb-500px flex-1 flex  justify-center relative">
         <div className="absolute top-[0px] left-[0px] w-[100%]" >
@@ -267,6 +278,7 @@ setviewmore(true)
             </div>
 {/* new */}
             <div>&nbsp;</div>
+            {viewmoreRight &&
             <div className=" relative ">
               {/* design */}
               <div className="design flex  absolute left-[-75px] top-1/2 items-center rotate-[90deg] sm:left-[-75px] ">
@@ -292,7 +304,9 @@ setviewmore(true)
                 </p>
               </div>
             </div>
+            }
             <div>&nbsp;</div>
+            {viewmoreRight &&
             <div className=" relative">
               {/* design */}
               <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
@@ -319,6 +333,25 @@ setviewmore(true)
                 </p>
               </div>
             </div>
+}
+              <button
+                  className="md:block hidden text-2xl mt-1 p-5 text-black hover:underline	"
+                  onClick={()=>{
+                    if (smallScreen) {
+                      setviewmoreRight((prev) => !prev)
+                    } else {
+                      setviewmoreLeft((prev) => {
+                        setviewmoreRight(!prev)
+                        return !prev
+                      })
+                    }
+                  }}>
+                {smallScreen ?
+                  (!viewmoreRight ? 'View more...' : 'View less...')
+                :
+                  (!viewmoreLeft && !viewmoreRight ? 'View more...' : 'View less...')
+                  }
+              </button>
           </fieldset>
         </div>
 

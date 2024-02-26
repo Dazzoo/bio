@@ -15,9 +15,11 @@ import { GrCode } from "react-icons/gr";
 import { SiMysql } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
 import { FaFlask } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
+import { GrMysql } from "react-icons/gr";
 
 import react01 from "../../assets/react.png";
 
@@ -61,17 +63,24 @@ const Skills = ({ darkMode }) => {
                 <ProgressBar
                  logo={<img src={require('../../assets/nodejs_black.png')} alt="" className="w-[19.4px]" />} 
                   name={"Node JS"}
-                  value={85}
+                  value={80}
                 />
                 <ProgressBar 
                 logo={<img src={require('../../assets/Expressjs.png')} alt="" className="w-[18.4px]" />} 
                 name={"Express"} 
-                value={73} />
+                value={75} />
                 <ProgressBar 
                 logo={<img src={require('../../assets/mongodb_black.png')} alt="" className="w-[18.4px]" />}  
                 name={"MongoDB"} 
-                value={80} />
-                
+                value={75} />
+                <ProgressBar 
+                logo={<SiNestjs alt="" className="w-[18.4px]" />}  
+                name={"Nest JS"} 
+                value={65} />
+                <ProgressBar 
+                logo={<GrMysql alt="" className="w-[18.4px]" />}  
+                name={"My SQL"} 
+                value={65} />
                
               </div>
             </div>
